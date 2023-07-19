@@ -1,0 +1,1 @@
+global.roomname = "JUST DROPPING BY"
