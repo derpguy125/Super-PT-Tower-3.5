@@ -16,6 +16,8 @@ ground = true;
 
 fear_timer = 0;
 
+hp = 1;
+
 image_speed = 0.25;
 
 spr_move = spr_baddie_move;

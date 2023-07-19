@@ -6,8 +6,11 @@ if obj_noia.state = "mach3" then {
 		hsp = 4 * -other.dir;
 		depth = -99;
 		sprite_index = other.spr_dead;
+		image_speed = 0;
+		image_index = irandom(sprite_get_number(sprite_index));
 		image_xscale = other.dir;
 	}
 	create_shake(4);
+	sound(sfx_killenemy);
 	instance_destroy();
 }

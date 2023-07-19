@@ -7,10 +7,16 @@ function enemy_move(){
 	
 	movespeed = 1;
 	
-	if (solids(x+dir,y) && !place_meeting(x + dir, y, obj_slope)) or !solids(x+(dir * 8),y+1) 
-		dir = -dir;
+	if solids(x + dir, y) || place_meeting(x+hsp,y,obj_hallway) {
+		if !place_meeting(x+dir,y,obj_slope)
+			dir *= -1;
+	}
+	
+	if !solids(x+(7 * dir),y+15) || place_meeting(x+(7 * dir),y+15,obj_platform) {
+		if movespeed > 0 then dir *= -1;
+	}
 		
-	if collision_rectangle(x-256,y-32,x+256,y+32,obj_noia,false,true) {
+	if collision_rectangle(x,y-32,x+(256*-obj_noia.dir),y+32,obj_noia,false,true) {
 		if obj_noia.state == "mach3" then {
 			state = "fear";
 			sprite_index = spr_fear;
@@ -19,6 +25,9 @@ function enemy_move(){
 			hsp = 0;
 			movespeed = 0;
 			fear_timer = 60;
+			var rand = irandom(16)
+			if rand = 0 then
+				sound(sfx_enemyscream);
 		}
 	}
 }

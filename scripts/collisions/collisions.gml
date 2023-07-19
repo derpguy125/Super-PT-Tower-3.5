@@ -53,51 +53,44 @@ function solids(xx,yy) {
 }
 
 function collide() {
-	// code rewritten from my other game SRB2C
+	
+	// code also shamelessly "rewritten" from code found in a pizza tower decomp namely the xmas break one
 	ground = false;
 	
-	// horizontal collisions
-	if solids(x+hsp,y) {
-		// move up slope
-		var yplus = 0;
-		while (solids(x+hsp,y-yplus) && yplus <= abs(hsp)) yplus += 1;
-		
-		//actually do the collisions
-		if solids(x+hsp,y-yplus) {
-			while !solids(x+sign(hsp),y) x += sign(hsp);	
-			hsp = 0;
-		} else y -= yplus;
-	}
-	x += hsp;
-	
-	// move down slope
-	if !solids(x,y) && vsp >= 0 && solids(x,y+2+abs(hsp)) {
-		while !solids(x,y+1) y ++;	
-	}
-	
 	// vertical collisions
-	if solids(x,y+vsp) {
-		while !solids(x,y+sign(vsp))
+	repeat abs(vsp) {
+		if !solids(x, y+sign(vsp))
 			y += sign(vsp);
-		vsp = 0;
+		else {
+			vsp = 0;
+			break;
+		}
 	}
-	y += vsp;
 	
-	// one way solid collision
-	
-	if place_meeting(x,y+1,obj_platform) && vsp > 0 {
-		var wall = instance_place(x,y+1,obj_platform);
-		if vsp > 0 {
-			if bbox_bottom > wall.bbox_top && (bbox_top < wall.bbox_top - ((bbox_bottom - bbox_top) - (abs(vsp) + 1))) {
-				vsp = 0;
-				y += wall.bbox_top - bbox_bottom;
-			}
+	// horizont me daddy
+	repeat abs(hsp) {
+		// slonp up
+		if solids(x + sign(hsp), y) && !solids(x + sign(hsp), y - 1) {
+			y --;
+		}
+			
+		// slonp down's
+		if !solids(x + sign(hsp), y) && !solids(x + sign(hsp), y + 1) && solids(x + sign(hsp), y + 2) {
+			y ++;
+		}
+			
+		// actual collisions
+		if !solids(x + sign(hsp), y)
+			x += sign(hsp);
+		else {
+			hsp = 0;
+			break;
 		}
 	}
 	
 	// gravity and groundination
 	
-	if vsp < 16 then vsp += grv;
+	if vsp < 20 then vsp += grv;
 	
 	ground |= solids(x, y+1);
 	ground |= ((!(place_meeting(x,y,obj_platform))) && place_meeting(x,y+1,obj_platform));
