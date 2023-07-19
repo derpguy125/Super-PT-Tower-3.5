@@ -53,39 +53,52 @@ function solids(xx,yy) {
 }
 
 function collide() {
-	// horiz collision
-	// Vertical
-	repeat(abs(vsp)) {
-	    if !solids(x, y + sign(vsp))
-	        y += sign(vsp); 
-	    else {
-	        vsp = 0;
-	        break;
-	    }
+	// code rewritten from my other game SRB2C
+	ground = false;
+	
+	// horizontal collisions
+	if solids(x+hsp,y) {
+		// move up slope
+		var yplus = 0;
+		while (solids(x+hsp,y-yplus) && yplus <= abs(hsp)) yplus += 1;
+		
+		//actually do the collisions
+		if solids(x+hsp,y-yplus) {
+			while !solids(x+sign(hsp),y) x += sign(hsp);	
+			hsp = 0;
+		} else y -= yplus;
 	}
-
-	// Horizontal
-	repeat(abs(hsp)) {
-	    // Move up slope
-	    if solids(x + sign(hsp), y) && !solids(x + sign(hsp), y - 1)
-			y--
-    
-	    // Move down slope
-	    if !solids(x + sign(hsp), y) && !solids(x + sign(hsp), y + 1) && solids(x + sign(hsp), y + 2)
-	        y++;
-
-	    if !solids(x + sign(hsp), y)
-	        x += sign(hsp); 
-	    else {
-	        hsp = 0;
-	        break;
-	    }
+	x += hsp;
+	
+	// move down slope
+	if !solids(x,y) && vsp >= 0 && solids(x,y+2+abs(hsp)) {
+		while !solids(x,y+1) y ++;	
 	}
 	
-	if vsp < 16 // gravity cap
-	    vsp += grv;
+	// vertical collisions
+	if solids(x,y+vsp) {
+		while !solids(x,y+sign(vsp))
+			y += sign(vsp);
+		vsp = 0;
+	}
+	y += vsp;
 	
-	if (solids(x,y+1)) or (!place_meeting(x,y,obj_platform) && place_meeting(x,y+1,obj_platform)) {
-	    ground = true;
-	} else ground = false;	
+	// one way solid collision
+	
+	if place_meeting(x,y+1,obj_platform) && vsp > 0 {
+		var wall = instance_place(x,y+1,obj_platform);
+		if vsp > 0 {
+			if bbox_bottom > wall.bbox_top && (bbox_top < wall.bbox_top - ((bbox_bottom - bbox_top) - (abs(vsp) + 1))) {
+				vsp = 0;
+				y += wall.bbox_top - bbox_bottom;
+			}
+		}
+	}
+	
+	// gravity and groundination
+	
+	if vsp < 16 then vsp += grv;
+	
+	ground |= solids(x, y+1);
+	ground |= ((!(place_meeting(x,y,obj_platform))) && place_meeting(x,y+1,obj_platform));
 }
