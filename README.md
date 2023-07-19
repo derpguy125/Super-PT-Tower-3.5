@@ -3,11 +3,19 @@
  
 ## meet the developers
  vizalermee boi - project lead, artist
+ 
  dg125 - coder, game designer, artist, level designer
+ 
  ionic slime - level designer
+ 
  pinepie - legacy game designer
+ 
  cristuho - ???
+ 
  boop01 - ???
+ 
  renato - ???
+ 
  craigkkk - ???
+ 
  arvarin - ???
