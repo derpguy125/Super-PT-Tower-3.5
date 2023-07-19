@@ -63,7 +63,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.6.0.89",
   },
   "resources": [
     {"id":{"name":"obj_tv","path":"objects/obj_tv/obj_tv.yy",},},
@@ -91,6 +91,7 @@
     {"id":{"name":"bg_butter_1","path":"sprites/bg_butter_1/bg_butter_1.yy",},},
     {"id":{"name":"spr_roomname_bg","path":"sprites/spr_roomname_bg/spr_roomname_bg.yy",},},
     {"id":{"name":"move_to_door","path":"scripts/move_to_door/move_to_door.yy",},},
+    {"id":{"name":"enemy_fear","path":"scripts/enemy_fear/enemy_fear.yy",},},
     {"id":{"name":"spr_noia_mach3drift","path":"sprites/spr_noia_mach3drift/spr_noia_mach3drift.yy",},},
     {"id":{"name":"spr_noia_crouchjump","path":"sprites/spr_noia_crouchjump/spr_noia_crouchjump.yy",},},
     {"id":{"name":"spr_doorB","path":"sprites/spr_doorB/spr_doorB.yy",},},

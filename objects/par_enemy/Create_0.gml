@@ -14,9 +14,12 @@ state = "move";
 
 ground = true;
 
+fear_timer = 0;
+
 image_speed = 0.25;
 
 spr_move = spr_baddie_move;
 spr_idle = spr_baddie;
 spr_jump = spr_baddie;
+spr_fear = spr_baddie_dead;
 spr_dead = spr_baddie_dead;

@@ -5,6 +5,9 @@ switch state {
 	case "move":
 		enemy_move();
 		break;
+	case "fear":
+		enemy_fear();
+		break;
 }
 
 collide();

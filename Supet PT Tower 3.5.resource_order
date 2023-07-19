@@ -62,6 +62,7 @@
     {"name":"player_machdive","order":9,"path":"scripts/player_machdive/player_machdive.yy",},
     {"name":"spr_roomname_bg","order":2,"path":"sprites/spr_roomname_bg/spr_roomname_bg.yy",},
     {"name":"move_to_door","order":4,"path":"scripts/move_to_door/move_to_door.yy",},
+    {"name":"enemy_fear","order":1,"path":"scripts/enemy_fear/enemy_fear.yy",},
     {"name":"spr_noia_mach3drift","order":15,"path":"sprites/spr_noia_mach3drift/spr_noia_mach3drift.yy",},
     {"name":"spr_noia_crouchjump","order":5,"path":"sprites/spr_noia_crouchjump/spr_noia_crouchjump.yy",},
     {"name":"spr_doorB","order":1,"path":"sprites/spr_doorB/spr_doorB.yy",},
