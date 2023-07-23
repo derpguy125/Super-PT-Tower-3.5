@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "sound",
+  "name": "sound_scripts",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

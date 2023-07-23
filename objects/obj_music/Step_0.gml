@@ -2,16 +2,22 @@ if !global.panic {
 	var _rmname = room_get_name(room);
 	
 	if room == Realtitlescreen
-		global.music = mu_titletemp;
+		set_level_music(mu_titletemp,mu_titletemp);
 		
 	if string_starts_with(_rmname,"hub_")
-		global.music = mu_hubtemp;
+		set_level_music(mu_hubtemp,mu_hubsecret);
 		
+	
+	if !global.insecret {
+		if global.music != global.levelsong then global.music = global.levelsong
+	} else {
+		if global.music != global.secretsong then global.music = global.secretsong
+	}
 	
 	
 	if !audio_is_playing(global.music) {
 		audio_stop_all();
-		sound(global.music);
+		music(global.music);
 	}
 } else {
 	// nothing	
