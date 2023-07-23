@@ -1,4 +1,4 @@
-global.collect = 1357924;
+global.collect = 0;
 
 global.roomname = "PIZZA TOWER ISLAND";
 showroomname = false;
@@ -14,5 +14,7 @@ yi2 = 0;
 global.scorefont = font_add_sprite_ext(spr_scorenumbers,"0123456789:",true,-2);
 global.font		 = font_add_sprite(spr_mainfont,ord("!"),true,1);
 global.font2	 = font_add_sprite(spr_mainfont2,ord("!"),true,1);
+
+global.hud_enabled = false;
 
 pal_swap_init_system(shd_pal_swapper);

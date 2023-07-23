@@ -1,1 +1,0 @@
-global.roomname = "SHOES ARE PRETTY NEAT\nI THINK"

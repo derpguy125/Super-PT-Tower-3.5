@@ -1,1 +1,0 @@
-global.roomname = "IT'S A SHOE SHOP"

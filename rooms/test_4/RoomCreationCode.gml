@@ -1,1 +1,0 @@
-global.roomname = "PIZZA TOWER ISLAND"

@@ -1,6 +1,11 @@
 if !global.panic {
+	var _rmname = room_get_name(room);
+	
 	if room == Realtitlescreen
-		global.music = mu_select;
+		global.music = mu_titletemp;
+		
+	if string_starts_with(_rmname,"hub_")
+		global.music = mu_hubtemp;
 		
 	
 	
