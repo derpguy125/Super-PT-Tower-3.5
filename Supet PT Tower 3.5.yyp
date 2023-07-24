@@ -100,6 +100,7 @@
     {"id":{"name":"player_machroll","path":"scripts/player_machroll/player_machroll.yy",},},
     {"id":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},},
     {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},},
+    {"id":{"name":"player_tackle","path":"scripts/player_tackle/player_tackle.yy",},},
     {"id":{"name":"sfx_mach4","path":"sounds/sfx_mach4/sfx_mach4.yy",},},
     {"id":{"name":"spr_fucknight_walk","path":"sprites/spr_fucknight_walk/spr_fucknight_walk.yy",},},
     {"id":{"name":"sfx_rollend","path":"sounds/sfx_rollend/sfx_rollend.yy",},},

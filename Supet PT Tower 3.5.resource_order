@@ -71,6 +71,7 @@
     {"name":"player_machroll","order":8,"path":"scripts/player_machroll/player_machroll.yy",},
     {"name":"obj_doorC","order":2,"path":"objects/obj_doorC/obj_doorC.yy",},
     {"name":"sfx_jump","order":6,"path":"sounds/sfx_jump/sfx_jump.yy",},
+    {"name":"player_tackle","order":17,"path":"scripts/player_tackle/player_tackle.yy",},
     {"name":"sfx_mach4","order":3,"path":"sounds/sfx_mach4/sfx_mach4.yy",},
     {"name":"spr_fucknight_walk","order":1,"path":"sprites/spr_fucknight_walk/spr_fucknight_walk.yy",},
     {"name":"sfx_rollend","order":5,"path":"sounds/sfx_rollend/sfx_rollend.yy",},
