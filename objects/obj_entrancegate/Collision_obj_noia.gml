@@ -5,11 +5,16 @@ with obj_noia {
 		
 		hsp = 0;
 		vsp = 0;
+		dir = 1;
 		
 		state = "enterdoor";
-		sprite_index = spr_enterdoor;
+		sprite_index = spr_entergate;
 		image_index = 0;
+		image_speed = 0.2;
 		
-		alarm[0] = 120;
+		global.musicpaused = true;
+		
+		other.alarm[0] = 120;
+		
 	}
 }

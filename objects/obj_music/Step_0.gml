@@ -7,6 +7,12 @@ if !global.panic {
 	if string_starts_with(_rmname,"hub_")
 		set_level_music(mu_hubtemp,mu_hubsecret);
 		
+	if global.level != "none" then switch global.level {
+		case "test":
+			set_level_music(mu_test,mu_hubsecret);
+			break;
+	}
+		
 	
 	if !global.insecret {
 		if global.music != global.levelsong then global.music = global.levelsong
@@ -22,3 +28,7 @@ if !global.panic {
 } else {
 	// nothing	
 }
+
+if global.musicpaused {
+	audio_pause_sound(global.music);
+} else audio_resume_sound(global.music);

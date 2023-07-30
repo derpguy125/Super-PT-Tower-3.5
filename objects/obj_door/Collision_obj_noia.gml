@@ -10,6 +10,6 @@ with obj_noia {
 		sprite_index = spr_enterdoor;
 		image_index = 0;
 		
-		instance_create(0,0,obj_fadeout);
+		other.alarm[0] = 30;
 	}
 }
