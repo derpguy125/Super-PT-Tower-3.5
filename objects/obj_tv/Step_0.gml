@@ -23,6 +23,16 @@ if visible {
 			yi2 += 8;	
 		} else yi2 = 0
 	}
+	
+	if showtext {
+		if xi > 0 then
+			xi -= 16;
+		else xi = 0;
+	} else {
+		if xi < 480 then
+			xi += 16;
+		else xi = 480;
+	}
 
 	// Update TV Sprite
 	tvindex += 0.25;

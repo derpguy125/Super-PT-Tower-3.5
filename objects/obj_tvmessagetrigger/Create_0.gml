@@ -1,0 +1,1 @@
+prompt[0] = "Oh Haldo! This is my funniest word style ever times that I've said! Hope all is onto it even more! And I wish the chicken & msg place was open on Somedays"

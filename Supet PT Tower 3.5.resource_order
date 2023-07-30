@@ -40,6 +40,8 @@
     {"name":"Tileset Sprites","order":6,"path":"folders/Sprites/Tileset Sprites.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
+    {"name":"Triggers","order":8,"path":"folders/Sprites/Triggers.yy",},
+    {"name":"Triggers","order":5,"path":"folders/Objects/Triggers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"text_shit","order":7,"path":"scripts/text_shit/text_shit.yy",},
@@ -138,6 +140,7 @@
     {"name":"player_jump","order":1,"path":"scripts/player_jump/player_jump.yy",},
     {"name":"spr_player_crouchmask","order":1,"path":"sprites/spr_player_crouchmask/spr_player_crouchmask.yy",},
     {"name":"obj_enemydead","order":1,"path":"objects/obj_enemydead/obj_enemydead.yy",},
+    {"name":"spr_tvbubble","order":5,"path":"sprites/spr_tvbubble/spr_tvbubble.yy",},
     {"name":"spr_doorE","order":4,"path":"sprites/spr_doorE/spr_doorE.yy",},
     {"name":"obj_entrancegate","order":5,"path":"objects/obj_entrancegate/obj_entrancegate.yy",},
     {"name":"spr_tv_noia_funny1","order":1,"path":"sprites/spr_tv_noia_funny1/spr_tv_noia_funny1.yy",},

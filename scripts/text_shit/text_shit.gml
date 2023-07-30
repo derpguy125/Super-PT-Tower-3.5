@@ -11,3 +11,13 @@ function get_text_proportional(str) {
 	
 	return b;
 }
+
+function queue_message(str) {
+	if ds_queue_empty(obj_tv.msg_store) and obj_tv.message == "" then {
+		obj_tv.message = str;
+		obj_tv.showtext = 1;
+		obj_tv.promptx = obj_tv.promptxstart;
+	} else {
+		ds_queue_enqueue(obj_tv.msg_store, str);	
+	}
+}
