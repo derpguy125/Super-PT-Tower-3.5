@@ -42,6 +42,7 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"text_shit","order":7,"path":"scripts/text_shit/text_shit.yy",},
     {"name":"obj_tv","order":2,"path":"objects/obj_tv/obj_tv.yy",},
     {"name":"spr_noia_mach2","order":9,"path":"sprites/spr_noia_mach2/spr_noia_mach2.yy",},
     {"name":"player_climbwall","order":12,"path":"scripts/player_climbwall/player_climbwall.yy",},

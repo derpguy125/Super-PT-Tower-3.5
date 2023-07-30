@@ -67,6 +67,7 @@
     "IDEVersion": "2023.6.0.92",
   },
   "resources": [
+    {"id":{"name":"text_shit","path":"scripts/text_shit/text_shit.yy",},},
     {"id":{"name":"obj_tv","path":"objects/obj_tv/obj_tv.yy",},},
     {"id":{"name":"mu_titletemp","path":"sounds/mu_titletemp/mu_titletemp.yy",},},
     {"id":{"name":"spr_noia_mach2","path":"sprites/spr_noia_mach2/spr_noia_mach2.yy",},},
