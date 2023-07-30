@@ -1,0 +1,1 @@
+global.roomname = "NOIA'S ASSULT"
