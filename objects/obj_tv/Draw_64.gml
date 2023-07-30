@@ -14,9 +14,9 @@ draw_text(240 + irandom_range(-1,1),floor(yi),global.roomname);
 
 draw_set_font(global.font);
 draw_set_halign(fa_left);
-draw_set_color(c_black);
+draw_set_color(make_color_rgb($20,$00,$33));
 
-draw_sprite(spr_tvbubble, 0, xi, yi2)
+draw_sprite(spr_tvbubble, 0, xi, 0)
 
 if (!surface_exists(promptsurface))
 	promptsurface = surface_create(266,32)
