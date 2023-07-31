@@ -9,6 +9,7 @@ function init_inputs(){
 	global.key_grab		= ini_read_string("ControlsKeys", "grab", 88)
 	global.key_taunt	= ini_read_string("ControlsKeys", "taunt", 67)
 	global.key_dash		= ini_read_string("ControlsKeys", "dash", 16)
+	global.key_start	= ini_read_string("ControlsKeys", "start", 27)
 	
 	ini_close();
 }

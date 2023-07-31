@@ -9,6 +9,7 @@ function get_input(){
 	key_grab	= keyboard_check(global.key_grab)
 	key_taunt	= keyboard_check(global.key_taunt)
 	key_dash	= keyboard_check(global.key_dash)
+	key_start	= keyboard_check(global.key_start)
 	
 	key_leftP	= keyboard_check_pressed(global.key_left)
 	key_rightP	= keyboard_check_pressed(global.key_right)
@@ -18,5 +19,6 @@ function get_input(){
 	key_grabP	= keyboard_check_pressed(global.key_grab)
 	key_tauntP	= keyboard_check_pressed(global.key_taunt)
 	key_dashP	= keyboard_check_pressed(global.key_dash)
+	key_startP	= keyboard_check(global.key_start)
 	
 }

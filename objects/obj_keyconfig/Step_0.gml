@@ -7,7 +7,7 @@ if (selecting == -1)
         key_select -= 1
         sound(sfx_step);
     }
-    if (key_downP && key_select < 7)
+    if (key_downP && key_select < 8)
     {
         key_select += 1
         sound(sfx_step);
@@ -29,6 +29,7 @@ if (key_jumpP && selecting == -1 && key_select == -1)
     ini_write_string("ControlsKeys", "grab", global.key_grab)
     ini_write_string("ControlsKeys", "dash", global.key_dash)
     ini_write_string("ControlsKeys", "taunt", global.key_taunt)
+    ini_write_string("ControlsKeys", "start", global.key_start)
     ini_close()
     if instance_exists(obj_options) {
         obj_options.visible = true
@@ -155,4 +156,20 @@ if (key_select == 7 && key_jumpP && selecting == -1)
 	sound(sfx_enemyprojectile)
     selecting = key_select
     global.key_taunt = -1
+}
+
+if (selecting == 8)
+{
+    if keyboard_check_pressed(vk_anykey)
+    {
+		sound(sfx_collectpizza)
+        global.key_start = keyboard_key
+        selecting = -1
+    }
+}
+if (key_select == 8 && key_jumpP && selecting == -1)
+{
+	sound(sfx_enemyprojectile)
+    selecting = key_select
+    global.key_start = -1
 }

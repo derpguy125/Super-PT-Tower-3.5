@@ -14,6 +14,7 @@ if visible {
 		} else yi = 286
 	}
 	
+	// hide thing for uh. tv thing
 	if obj_noia.y <= 72 then {
 		if yi2 > -96 {
 			yi2 -= 8;	
@@ -24,6 +25,7 @@ if visible {
 		} else yi2 = 0
 	}
 	
+	// make tv text visible
 	if showtext {
 		if xi > 0 then
 			xi -= 16;
@@ -53,4 +55,10 @@ if visible {
 	
 		tvindex = 0;
 	}
+}
+
+get_input();
+
+if key_startP {
+		
 }

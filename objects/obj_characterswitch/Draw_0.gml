@@ -1,6 +1,6 @@
 draw_rectangle_color(0,0,480,270,c_dkgray,c_dkgrey,c_ltgrey,c_ltgrey,0);
 
-for (i = 0; i < 31; i++) {
+for (i = 0; i < 32; i++) {
 	pal_swap_set(spr_noiapalette,i,0);
 	var col = c_white;
 	if pal_selected != i then col = c_dkgrey;

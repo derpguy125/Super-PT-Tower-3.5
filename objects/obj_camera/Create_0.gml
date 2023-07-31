@@ -7,4 +7,4 @@ trgShiftX = 0;
 
 depth = -99
 
-global.saveroom = ds_list_create()
+global.saveroom = ds_list_create();
