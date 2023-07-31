@@ -21,12 +21,13 @@ function player_mach1(){
 		movespeed = 0;
 		image_index = 0;
 		dir = -dir;
+		mach2 = 0;
 	}
 	
 	if ground {
-		if mach2 < 20
+		if mach2 < 30
 			mach2 ++
-		if mach2 >= 20 {
+		if mach2 >= 30 {
 			movespeed = 8;
 			state = "mach2";
 			sprite_index = spr_mach2;
@@ -49,6 +50,7 @@ function player_mach1(){
 		mach2 = 0;
 		audio_stop_sound(sfx_mach1);
 	}
+	
 	
 	
 	if key_jump && ground && key_dash {

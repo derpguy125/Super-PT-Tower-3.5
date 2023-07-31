@@ -51,7 +51,7 @@ if xi = 0 then {
 surface_reset_target()
 draw_surface(promptsurface, 81, 2)
 
-//if global.hud_enabled {
+if global.hud_enabled {
 	// draw scorekeeping
 	draw_set_color(c_white)
 	draw_set_font(global.scorefont);
@@ -71,5 +71,5 @@ draw_surface(promptsurface, 81, 2)
 	pal_swap_set(spr_noiapalette,global.pal,0);
 	draw_sprite(tvsprite,tvindex,424,-8 + yi2);
 	shader_reset();
-//}
+}
 
