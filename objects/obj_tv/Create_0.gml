@@ -22,7 +22,7 @@ global.hud_enabled = false;
 message = ""
 showtext = 0
 promptsurface = surface_create(266,32)
-promptx = 240
+promptx = 280
 promptxstart = promptx
 promptspd = 2
 

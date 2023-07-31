@@ -28,11 +28,11 @@ if visible {
 	// make tv text visible
 	if showtext {
 		if xi > 0 then
-			xi -= 16;
+			xi = lerp(xi,0,0.1) - 1;
 		else xi = 0;
 	} else {
 		if xi < 480 then
-			xi += 16;
+			xi = lerp(xi,480,0.1) + 1;
 		else xi = 480;
 	}
 

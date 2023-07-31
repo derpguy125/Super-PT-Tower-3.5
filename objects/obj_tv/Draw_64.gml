@@ -16,7 +16,7 @@ draw_set_font(global.font);
 draw_set_halign(fa_left);
 draw_set_color(make_color_rgb($20,$00,$33));
 
-draw_sprite(spr_tvbubble, 0, xi, 0)
+draw_sprite(spr_tvbubble, 0, xi, -8)
 
 if (!surface_exists(promptsurface))
 	promptsurface = surface_create(266,32)
@@ -49,7 +49,7 @@ if xi = 0 then {
 }
 
 surface_reset_target()
-draw_surface(promptsurface, 81, 10)
+draw_surface(promptsurface, 81, 2)
 
 //if global.hud_enabled {
 	// draw scorekeeping
