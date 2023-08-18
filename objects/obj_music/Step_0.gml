@@ -8,8 +8,11 @@ if !global.panic {
 		set_level_music(mu_hubtemp,mu_hubsecret);
 		
 	if global.level != "none" then switch global.level {
-		case "test":
+		case "notebook":
 			set_level_music(mu_test,mu_hubsecret);
+			break;
+		default:
+			set_level_music(mu_titletemp,mu_titletemp);
 			break;
 	}
 		

@@ -1,3 +1,3 @@
-targetRoom = test_1;
-levelname = "Test Level (will become notebook)";
-level = "test";
+targetRoom = notebook_1;
+levelname = "Noia's Notebook";
+level = "notebook";

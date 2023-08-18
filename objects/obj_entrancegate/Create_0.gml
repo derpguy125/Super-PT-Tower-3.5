@@ -1,4 +1,4 @@
-targetRoom = Realtitlescreen;
+targetRoom = room;
 targetDoor = "A";
 
 level = "notebook";

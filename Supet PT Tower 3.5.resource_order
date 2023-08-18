@@ -17,7 +17,7 @@
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"HUB","order":2,"path":"folders/Rooms/HUB.yy",},
     {"name":"Jonas Butter","order":4,"path":"folders/Rooms/Jonas Butter.yy",},
-    {"name":"test level","order":3,"path":"folders/Rooms/test level.yy",},
+    {"name":"Notebook Level","order":3,"path":"folders/Rooms/Notebook Level.yy",},
     {"name":"Scripts","order":4,"path":"folders/Scripts.yy",},
     {"name":"Collisions","order":2,"path":"folders/Scripts/Collisions.yy",},
     {"name":"Cool Tools","order":3,"path":"folders/Scripts/Cool Tools.yy",},

@@ -1,2 +1,2 @@
-targetRoom = Realtitlescreen;
+targetRoom = room;
 targetDoor = "A";
