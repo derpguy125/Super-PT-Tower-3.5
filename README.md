@@ -3,7 +3,9 @@
 
  it's that pizza game that you play and think "wow thiis game is a sucks!" /j
 
- jsyk there's a lot of work done yet no friggin commits because i coded a lot of shit before ever getting a repo up lmao
+ a pizza tower fangame that i no longer work for due to Reasons Beyond Vizalermee Boi's Control (me leaving the pt community)
+
+ still being worked on, but without my input. this is what it used to be about a year before [this devlog](https://www.youtube.com/watch?v=HxPWRWLR4zM). if push comes to shove, i will have to request for my code/art to not be used in the current version, but for now i'm allowing the usage of it
  
 ## meet the developers
 ### PROJECT LEAD
